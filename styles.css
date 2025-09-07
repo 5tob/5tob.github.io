@@ -1,0 +1,181 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --rojo: #e50914;
+  --negro: #111;
+  --blanco: #fff;
+  --gris: #1c1c1c;
+}
+
+/* Header */
+header {
+  background: var(--negro);
+  color: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: var(--rojo);
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(17,17,17,0.9)), url("https://images.unsplash.com/photo-1518770660439-4636190af475") no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--blanco);
+  padding: 2rem;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: var(--rojo);
+  color: var(--blanco);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #b00610;
+}
+
+/* Secciones */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.952);
+  ;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(134, 134, 134);
+}
+.section p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+.bg-dark {
+  background-color: #000000;
+  color: white
+}
+
+/* Iconos */
+.icon-img {
+  width: 120px;
+  margin-top: 1.5rem;
+  transition: transform 0.3s;
+}
+.icon-img:hover {
+  transform: scale(1.1);
+}
+
+/* Galería */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.galeria-grid img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.3s;
+}
+.galeria-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* Footer */
+footer {
+  background: var(--negro);
+  color: #888;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+ /* Parallax para Galería */
+.parallax-section {
+  position: relative;
+  background-image: url("https://i.pinimg.com/originals/11/15/68/1115685ebfd9ebb1b8b7f2a0f62c6274.png");
+  background-attachment: fixed;  /* efecto parallax */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6rem 2rem;
+}
+
+.parallax-section .overlay {
+  background: rgba(0,0,0,0.65); /* oscurece un poco para que se lean bien los textos */
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  
+}
+
+.parallax-section h2 {
+  color: #ff4747;
+}
+
+.ltr{
+    position: relative;
+    color: #b00610;
+    
+}
+
+.tam{
+    width: 100px;
+}
