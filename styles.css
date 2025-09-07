@@ -119,6 +119,7 @@ header nav a:hover {
 .galeria-grid img {
   width: 100%;
   border-radius: 12px;
+  height:80%;
   transition: transform 0.4s, box-shadow 0.3s;
 }
 .galeria-grid img:hover {
@@ -178,4 +179,5 @@ footer {
 
 .tam{
     width: 100px;
+
 }
